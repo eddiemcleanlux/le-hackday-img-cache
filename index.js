@@ -10,9 +10,9 @@ const port = process.env.PORT || 3666;
 const { getBingImage } = require('./bing');
 
 app.get('/', (req, res) => {
-  res.header("Access-Control-Allow-Origin", "*");
-  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
-  res.set('Cache-Control', 'public, max-age=31557600'); // one year
+  res.set("Access-Control-Allow-Origin", "*");
+  res.set("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+  res.set('Cache-Control', 'public, max-age=86400'); // one day
 
   if (!req.query.eventTitle) {
     return res.send('');
