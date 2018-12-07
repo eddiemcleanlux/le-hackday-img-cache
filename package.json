@@ -1,0 +1,19 @@
+{
+  "name": "le-event-img-cache",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "dependencies": {
+    "dotenv-safe": "^6.1.0",
+    "express": "^4.16.4",
+    "isomorphic-fetch": "^2.2.1",
+    "redis": "^2.8.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.7"
+  }
+}
